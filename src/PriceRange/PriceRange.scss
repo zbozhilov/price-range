@@ -1,0 +1,149 @@
+.zb-price-range-wrap {
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px 20px;
+    max-width: 400px;
+    min-height: 200px;
+    box-sizing: border-box;
+
+    .zb-price-range-label {
+        font-size: 20px;
+        font-weight: 500;
+        color: #202020;
+        margin-bottom: 10px;
+    }
+    .zb-price-range-desc {
+        font-size: 14px;
+        font-weight: 400;
+        color: #545454;
+        margin-bottom: 20px;
+    }
+
+    .zb-price-range-input-wrap {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 20px 1fr;
+        gap: 20px;
+
+        .zb-price-range-input-dash {
+            align-self: center;
+            color: #999;
+            line-height: 1;
+        }
+
+        .zb-price-range-input-label {
+            font-size: 14px;
+            font-weight: 400;
+            color: #202020;
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+
+        input {
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 12px 10px;
+            box-sizing: border-box;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            color: #202020;
+            font-weight: 600;
+        }
+
+        .zb-price-currency-label {
+            font-size: 14px;
+            font-weight: 400;
+            color: #202020;
+            margin-top: 5px;
+        }
+    }
+
+    .zb-price-range-button-wrap {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #ddd;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .zb-price-range-button-clear {
+            font-size: 16px;
+            font-weight: 500;
+            color: #999;
+            line-height: 1;
+            cursor: pointer;
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: #202020;
+            }
+        }
+
+        .zb-price-range-button-apply {
+            background-color: #202020;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 12px 24px;
+            border-radius: 12px;
+            box-sizing: border-box;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            line-height: 1;
+
+            &:hover {
+                background-color: #000;
+            }
+        }
+    }
+}
+
+.zb-price-range-slider-wrap {
+    position: relative;
+    height: 34px;
+
+    .zb-price-range-slider {
+        top: 15px;
+
+        &-thumb {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            top: -14px;
+            outline: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+
+            &:hover {
+                background-color: #ddd;
+            }
+
+            &:active {
+                background-color: #202020;
+                border-color: #202020;
+            }
+        }
+
+        &-track {
+            background-color: #ddd;
+            height: 4px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background-color 0.2s ease;
+
+            &.zb-price-range-slider-track-1 {
+                background-color: #202020;
+            }
+
+            &:not(.zb-price-range-slider-track-1) {
+                &:hover {
+                    background-color: #ccc;
+                }
+            }
+        }
+    }
+}
